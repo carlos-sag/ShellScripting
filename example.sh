@@ -73,7 +73,7 @@ sh /opt/sisve/Shell/monitoreo/alersalida-mod.sh $0 $cmprint $cmobjin
 if $rc -ne 0
 then
     #Envio de correo
-    sh /opt/sag/Shell/sendMail.sh carlos.miranda@softwareag.com carlos.miranda.ortega@gmail.com "TARIFICACION - Shell WPINACTI - ERROR" "Finalizacion de Shell con RC=$rc \n \nFAVOR REVISAR Y EJECUTAR MANUALMENTE \n \n -------Directorio-------- \n/opt/sisve/demonio/WPINACTI.sh \n \n -------PROGRAMA NATURAL-------- \n$PRG"
+    sh /opt/sag/Shell/sendMail.sh carlos.miranda.ortega@hotmail.com carlos.miranda.ortega@gmail.com "TARIFICACION - Shell WPINACTI - ERROR" "Finalizacion de Shell con RC=$rc \n \nFAVOR REVISAR Y EJECUTAR MANUALMENTE \n \n -------Directorio-------- \n/opt/sisve/demonio/WPINACTI.sh \n \n -------PROGRAMA NATURAL-------- \n$PRG"
 else
     exit
 fi
